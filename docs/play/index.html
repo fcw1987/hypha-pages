@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070708">
+  <meta name="description" content="Log a pickleball score, rotate doubles partners, climb the ladder or turn pools into playoffs. See who clicks over a whole season.">
+  <title>Hypha — Pickleball scores and draws</title>
+  <link rel="canonical" href="https://fcw1987.github.io/hypha-source/play/">
+  <link rel="icon" href="./media/icon.png" type="image/png">
+  <link rel="stylesheet" href="./play.css">
+  <script src="./sculptures.js" defer></script>
+  <script src="./play.js" defer></script>
+  <script src="./telecast.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <div class="mast-in">
+      <a class="brand" href="#main" aria-label="Hypha, back to the top">Hypha<span aria-hidden="true" class="brand-dot"></span></a>
+      <nav aria-label="Primary">
+        <a class="nav-guide" href="../index.html">How it works <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="scene opener" id="rally" aria-labelledby="hero-title">
+      <div class="scene-grid">
+        <div class="hero-heading">
+          <p class="sport"><span aria-hidden="true"></span>Pickleball</p>
+          <h1 id="hero-title"><span>Scores</span> <em>&amp; draws.</em></h1>
+        </div>
+        <div class="lead scene-copy">
+          <p>Run a round robin or a playoff bracket. Toss for first serve, get a reminder to switch ends, and log the final.</p>
+          <div class="actions">
+            <a class="primary" href="https://hypha.franklinwaggoner.chatgpt.site/">Open Hypha <span aria-hidden="true">↗</span></a>
+            <a class="secondary" href="../index.html">How it works</a>
+          </div>
+          <p class="friend">No passphrase? Ask around at the courts.</p>
+        </div>
+        <div class="tv-outer">
+          <div class="tv-object" id="tv-object">
+            <img class="sculpture" src="./media/crt.webp" width="1100" height="1100" fetchpriority="high" alt="A purple metal-flake television and two smaller candy-painted sets tangled in lime putty.">
+            <a class="glass" id="crt-screen" href="./media/club-doubles.mp4" data-frame="poster" aria-label="Watch the pickleball broadcast" aria-describedby="broadcast-description">
+              <div class="scorebug" aria-hidden="true">
+                <div class="score-teams">
+                  <div class="score-team moss"><img class="club-crest" src="./media/moss-crest.png" width="512" height="512" alt=""><span><small>Portland</small><b>Moss</b></span><strong>7</strong></div>
+                  <div class="score-team static"><img class="club-crest" src="./media/static-crest.png" width="512" height="512" alt=""><span><small>Seattle</small><b>Static</b></span><strong>5</strong></div>
+                </div>
+              </div>
+              <div class="broadcast-shot" aria-hidden="true">
+                <video id="telecast" muted playsinline loop preload="none" width="960" height="720" poster="./media/arena.webp"></video>
+                <img id="telecast-poster" src="./media/arena.webp" width="960" height="720" alt="">
+              </div>
+            </a>
+            <span id="broadcast-description" hidden>A silent fictional pickleball broadcast. Four athletes trade volleys in front of a packed crowd. A slow-motion replay follows. Portland Moss leads Seattle Static 7 to 5.</span>
+            <span class="flight-port" id="launch"><img class="still-ball" src="./media/ball-shell.webp" width="666" height="666" alt=""></span>
+          </div>
+        </div>
+      </div>
+      <a class="next-chapter" href="#draw">The draw <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="scene mixer" id="draw" aria-labelledby="draw-title">
+      <div class="scene-grid">
+        <div class="draw-heading">
+          <h2 id="draw-title"><span>The next</span> <em>matchup.</em></h2>
+        </div>
+        <div class="duo-outer">
+          <div class="duo-object" id="duo-object">
+            <img class="sculpture" src="./media/duo.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Two glossy putty doubles partners high-five, their glittery paddles held out to either side.">
+            <div class="performers" aria-hidden="true" hidden>
+              <img class="performer rose" data-file="./media/partner-rose.webp" width="686" height="1103" alt="">
+              <img class="performer cobalt" data-file="./media/partner-cobalt.webp" width="704" height="1164" alt="">
+              <canvas class="partner-mesh" hidden></canvas>
+            </div>
+            <span class="flight-port" id="catch" aria-hidden="true"></span>
+          </div>
+        </div>
+        <dl class="formats scene-copy">
+          <div><dt>Partner rotation</dt><dd>Rotate every game. With four on one court, keep a pairing for a best-of-three or rearrange upcoming matchups.</dd></div>
+          <div><dt>Court ladder</dt><dd>Win up, lose down. Each round reshuffles the courts.</dd></div>
+          <div><dt>Tournament</dt><dd>Start in pools. Seed the playoffs. Play down to the final.</dd></div>
+        </dl>
+      </div>
+      <a class="next-chapter" href="#sideline">The sideline <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="scene sideline" id="sideline" aria-labelledby="sideline-title">
+      <div class="sideline-grid">
+        <div class="sideline-copy scene-copy">
+          <h2 id="sideline-title">On the <em>sideline.</em></h2>
+          <p>Chat follows the group across outings. Guests can chime in, scorekeepers post finals, and the activity log shows who corrected a score.</p>
+          <p>Owners invite from Share. Once a session is submitted, anyone in the thread can share its recap.</p>
+          <p class="appearance-note"><a href="../index.html#app-appearance">Choose dark, light or your system theme<span aria-hidden="true"> ↗</span></a></p>
+        </div>
+        <img class="bench" src="./media/sideline.webp" width="1440" height="960" loading="lazy" decoding="async" alt="A lavender paddle waves while a lime pickleball and a coiled orange towel bump fists on a courtside bench.">
+      </div>
+      <a class="next-chapter" href="#season">The season <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="scene season" id="season" aria-labelledby="season-title">
+      <div class="scene-grid">
+        <div class="season-heading">
+          <h2 id="season-title"><span>Who</span> <em>clicks?</em></h2>
+        </div>
+        <figure class="record" id="record">
+          <div class="rig">
+            <div class="bezel">
+              <span class="screw tl" aria-hidden="true"></span><span class="screw tr" aria-hidden="true"></span>
+              <div class="nameplate">Pip <i>&amp;</i> Bea</div>
+              <div class="wheels" aria-hidden="true">
+                <div class="bank"><span>WINS</span><div class="digits" data-numbers="01,21"><b>0</b><b>1</b></div></div>
+                <i class="dash"></i>
+                <div class="bank"><span>LOSSES</span><div class="digits" data-numbers="02,11"><b>0</b><b>2</b></div></div>
+              </div>
+              <div class="meter-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="screw bl" aria-hidden="true"></span><span class="screw br" aria-hidden="true"></span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="fiction">Fictional season <i>·</i> wins–losses</span>
+            <span>Opening night <strong>1–2</strong><i aria-hidden="true">→</i> Whole season <strong>21–11</strong></span>
+          </figcaption>
+        </figure>
+        <div class="season-copy scene-copy">
+          <p>Bring the group back for another outing. Watch the standings move and see which doubles pairs win together.</p>
+          <div class="actions">
+            <a class="primary" href="https://hypha.franklinwaggoner.chatgpt.site/">Open Hypha <span aria-hidden="true">↗</span></a>
+            <a class="secondary" href="../index.html#lantern">Example season</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a class="brand" href="#main">Hypha<span class="brand-dot" aria-hidden="true"></span></a>
+    <a id="share" href="https://fcw1987.github.io/hypha-source/play/">Public page link <span aria-hidden="true">↗</span></a>
+  </footer>
+  <div class="flight" id="flight" aria-hidden="true" hidden>
+    <img class="flight-poster" src="./media/ball-shell.webp" width="666" height="666" alt="">
+    <canvas class="ball-surface" data-file="./media/ball-surface.png" hidden></canvas>
+  </div>
+</body>
+</html>
